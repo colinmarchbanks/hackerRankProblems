@@ -10,6 +10,20 @@ public class Solution {
 
     // Complete the angryProfessor function below.
     static String angryProfessor(int k, int[] a) {
+        int yes = 0;
+        int no = 0;
+        for(int x = 0; x <a.length;x++){
+            if(a[x] <= 0 ){
+                no++;
+            }else{
+                yes++;
+            }
+        }
+        if(no >= k){
+            return "NO";
+        }else{
+            return "YES";
+        }
 
 
     }
